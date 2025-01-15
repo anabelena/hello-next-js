@@ -1,7 +1,7 @@
 import "./globals.css";
-import { Geist } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 
-const lato = Geist({
+const roboto = Roboto({
   weight:"700",
   subsets:['latin'],
 })
@@ -12,9 +12,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={lato.className}>
+    <html lang="en" className={roboto.className}>
       <body className={`antialiased`}>{children} 
-        <p>Copyright 2025 -- DEFAULT LAYOUT </p>
+        <p>Copyright 2025  </p>
       </body>
     </html>
   );
