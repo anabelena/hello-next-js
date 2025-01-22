@@ -1,10 +1,12 @@
-export default function Product({ product }) {
-    return (
-      <div>
-        <p>{product.title}</p>
-        <a className="text-blue-400" href={`/productos/${product.id}`}>
-          Ver detalle
-        </a>
-      </div>
-    );
+import { IProduct } from "@/types/product";
+
+export default function Product({ title, id }: IProduct) {
+  return (
+    <div>
+      <p>{title}</p>
+      <a className="text-blue-400" href={`/productos/${id}`}>
+        Ver detalle
+      </a>
+    </div>
+  );
 }
