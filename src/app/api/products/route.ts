@@ -4,12 +4,13 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     return NextResponse.json(
-      { products, message: "Products loaded" },
+      { products, message: "Los productos fueron cargados" },
       { status: 200 }
     );
   } catch {
     return NextResponse.json(
-      { message: "Error" }, 
-      { status: 500 });
+      { message: "Error al cargar los productos" },
+      { status: 500 }
+    );
   }
 }
